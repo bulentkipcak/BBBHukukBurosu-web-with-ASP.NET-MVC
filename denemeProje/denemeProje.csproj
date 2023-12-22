@@ -1511,6 +1511,9 @@
     <Content Include="Views\Slider\Edit.cshtml" />
     <Content Include="Views\Slider\Index.cshtml" />
     <Content Include="Views\Home\SliderPartial.cshtml" />
+    <Content Include="Views\Home\Hakkimizda.cshtml" />
+    <Content Include="Views\Home\FooterPartial.cshtml" />
+    <Content Include="Views\Home\Hizmetlerimiz.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

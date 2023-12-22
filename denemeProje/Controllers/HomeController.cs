@@ -14,8 +14,7 @@ namespace denemeProje.Controllers
         public ActionResult Index()
         {
             ViewBag.Hizmetler = db.Hizmet.ToList().OrderByDescending(x => x.HizmetId);
-            ViewBag.Iletisim = db.Iletisim.SingleOrDefault();
-            ViewBag.Blog = db.Blog.ToList().OrderByDescending(x => x.BlogId);
+
             return View();
         }
 
@@ -23,10 +22,26 @@ namespace denemeProje.Controllers
         {
             return View(db.Slider.ToList().OrderByDescending(x=>x.SliderId));
         }
-        public ActionResult HizmetPartial()
+        public ActionResult Hakkimizda()
         {
 
-            return View(db.Hizmet.ToList());
+            return View(db.Hakkimizda.SingleOrDefault());
+
         }
+        public ActionResult Hizmetlerimiz()
+        {
+            return View(db.Hizmet.ToList().OrderByDescending(x=>x.HizmetId));
+        }
+
+
+        public ActionResult FooterPartial()
+        {
+            ViewBag.Hizmetler = db.Hizmet.ToList().OrderByDescending(x => x.HizmetId);
+            ViewBag.Iletisim = db.Iletisim.SingleOrDefault();
+            ViewBag.Blog = db.Blog.ToList().OrderByDescending(x => x.BlogId);
+            return PartialView();
+        }
+
     }
+    
 }
