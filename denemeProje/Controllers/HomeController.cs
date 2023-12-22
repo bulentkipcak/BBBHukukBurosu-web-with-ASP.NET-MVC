@@ -13,12 +13,18 @@ namespace denemeProje.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            ViewBag.Hizmetler = db.Hizmet.ToList().OrderByDescending(x => x.HizmetId);
             return View();
         }
 
         public ActionResult SliderPartial()
         {
             return View(db.Slider.ToList().OrderByDescending(x=>x.SliderId));
+        }
+        public ActionResult HizmetPartial()
+        {
+
+            return View(db.Hizmet.ToList());
         }
     }
 }
