@@ -56,6 +56,12 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
@@ -1183,6 +1189,7 @@
     <Content Include="Content\DataTables\images\sort_desc.png" />
     <Content Include="Content\DataTables\images\sort_desc_disabled.png" />
     <Content Include="Content\DataTables\swf\flashExport.swf" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\SiteLayout\blog.html" />
     <Content Include="Content\SiteLayout\components.html" />
@@ -1459,6 +1466,7 @@
     <Compile Include="Controllers\KategoriController.cs" />
     <Compile Include="Controllers\KimlikController.cs" />
     <Compile Include="Controllers\SliderController.cs" />
+    <Compile Include="Controllers\YorumController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1472,6 +1480,7 @@
     <Compile Include="Models\Model\Kategori.cs" />
     <Compile Include="Models\Model\Kimlik.cs" />
     <Compile Include="Models\Model\Slider.cs" />
+    <Compile Include="Models\Model\Yorum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1515,6 +1524,15 @@
     <Content Include="Views\Home\FooterPartial.cshtml" />
     <Content Include="Views\Home\Hizmetlerimiz.cshtml" />
     <Content Include="Views\Home\Iletisim.cshtml" />
+    <Content Include="Views\Home\Blog.cshtml" />
+    <Content Include="Views\Home\BlogKategoriPartial.cshtml" />
+    <Content Include="Views\Home\BlogKayitPartial.cshtml" />
+    <Content Include="Views\Home\BlogDetay.cshtml" />
+    <Content Include="Views\Yorum\Create.cshtml" />
+    <Content Include="Views\Yorum\Delete.cshtml" />
+    <Content Include="Views\Yorum\Details.cshtml" />
+    <Content Include="Views\Yorum\Edit.cshtml" />
+    <Content Include="Views\Yorum\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -56,3 +56,7 @@ C:\Users\Bulent\source\repos\denemeProje\denemeProje\bin\EntityFramework.dll
 C:\Users\Bulent\source\repos\denemeProje\denemeProje\bin\EntityFramework.SqlServer.dll
 C:\Users\Bulent\source\repos\denemeProje\denemeProje\bin\EntityFramework.xml
 C:\Users\Bulent\source\repos\denemeProje\denemeProje\bin\EntityFramework.SqlServer.xml
+C:\Users\Bulent\source\repos\denemeProje\denemeProje\bin\PagedList.dll
+C:\Users\Bulent\source\repos\denemeProje\denemeProje\bin\PagedList.Mvc.dll
+C:\Users\Bulent\source\repos\denemeProje\denemeProje\bin\PagedList.xml
+C:\Users\Bulent\source\repos\denemeProje\denemeProje\bin\PagedList.Mvc.xml
