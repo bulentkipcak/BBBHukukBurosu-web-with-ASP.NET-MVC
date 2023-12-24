@@ -18,7 +18,7 @@ namespace denemeProje.Controllers
         // GET: Yorum
         public ActionResult Index()
         {
-            var yorum = db.Yorum.Include(y => y.Blog).OrderByDescending(x=>x.BlogId);
+            var yorum = db.Yorum.Include(y => y.Blog).OrderByDescending(x=>x.YorumId);
             return View(yorum.ToList());
         }
 

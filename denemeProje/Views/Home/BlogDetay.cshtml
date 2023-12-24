@@ -1,7 +1,7 @@
 ﻿@model denemeProje.Models.Model.Blog
 
 @{
-    ViewBag.Title = "BlogDetay";
+    ViewBag.Title = Model.Baslik;
     Layout = "~/Views/Shared/_SiteLayout.cshtml";
 }
 
@@ -60,7 +60,20 @@
                             </div>
                         </div>
                     </div>
-                
+                    <div class="row">
+                        <div>
+                            <h3>Makale Yorumları</h3><hr />
+                            @foreach (var item in Model.Yorums.OrderByDescending(x=>x.YorumId).Where(x=>x.Onay==true))
+                            {
+                                
+                                <p>@item.AdSoyad - @item.Eposta</p>
+                                <p>@item.Icerik</p>
+                                <hr />
+                            }
+
+                        </div>
+
+                    </div>
 
 
                 
@@ -112,7 +125,7 @@
                 type: 'POST',
                 dataType: 'json',
                 success: function (data) {
-                    alert(adisoyadi + " - Yorumunuz eklendi kontrol ediltikten sonra yayınlanacaktır.");
+                    alert(adisoyadi + " - Yorumunuz onaya gönderildi, kontrol ediltikten sonra yayınlanacaktır.");
                     location.reload();
                     $('html, body').scrollTop(0);
                 }
