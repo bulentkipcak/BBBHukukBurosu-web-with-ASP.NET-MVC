@@ -1479,6 +1479,7 @@
     <Compile Include="Models\Model\Iletisim.cs" />
     <Compile Include="Models\Model\Kategori.cs" />
     <Compile Include="Models\Model\Kimlik.cs" />
+    <Compile Include="Models\Model\Kullanici.cs" />
     <Compile Include="Models\Model\Slider.cs" />
     <Compile Include="Models\Model\Yorum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -1537,6 +1538,9 @@
     <Content Include="Views\Admin\Adminler.cshtml" />
     <Content Include="Views\Admin\Create.cshtml" />
     <Content Include="Views\Admin\Edit.cshtml" />
+    <Content Include="Views\Home\KullaniciGiris.cshtml" />
+    <Content Include="Views\Shared\_IconGirisYap.cshtml" />
+    <Content Include="Views\Home\KayitOlKullanici.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

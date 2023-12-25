@@ -1,0 +1,56 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Kullanıcı Girişi</title>
+    <!-- Bootstrap CSS -->
+    <link href="/Content/AdminLayout/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="/Content/AdminLayout/css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="/Content/AdminLayout/css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="/Content/AdminLayout/css/font-awesome.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link href="/Content/AdminLayout/css/style.css" rel="stylesheet">
+    <link href="/Content/AdminLayout/css/style-responsive.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div>
+
+
+        <form class="login-form" method="post" action="/Home/KullaniciGiris/">
+
+            <div class="login-wrap">
+                @if (Session["kullaniciid"] == null)
+                {
+                    <p class="alert">@ViewBag.UyariKullanici</p>
+                }
+                
+                <p class="login-img"><i class="icon_lock_alt"></i></p>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="icon_profile"></i></span>
+                    <input type="text" class="form-control" name="KullaniciAd" placeholder="Kullanıcı Adı" autofocus>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="icon_key_alt"></i></span>
+                    <input type="password" class="form-control" name="Sifre" placeholder="Şifre">
+                </div>
+                <label class="checkbox">
+                    <input type="checkbox" value="remember-me"> Beni Hatırla
+                    <span class="pull-right"> <a href="#"> Şifremi Unuttum</a></span>
+                </label>
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Giriş Yap</button>
+                <button class="btn btn-info btn-lg btn-block" type="submit">@Html.ActionLink("Kaydol", "KayitOlKullanici")</a></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

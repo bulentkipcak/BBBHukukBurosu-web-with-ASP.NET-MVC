@@ -1,0 +1,14 @@
+﻿@if (Session["kullaniciid"] == null)
+{
+    <a href="/Home/KullaniciGiris/">
+        <i class="fa fa-user"></i>
+        <span>Giriş Yap</span>
+    </a>
+}
+else
+{
+    <a href="/Home/KullaniciCikis/">
+        <i class="fa font-icon-arrow-simple-right-circle"></i>
+        <span>Çıkış</span>
+    </a>
+}
