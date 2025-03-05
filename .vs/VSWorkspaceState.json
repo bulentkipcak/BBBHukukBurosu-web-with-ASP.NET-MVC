@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\denemeProje",
-    "\\denemeProje\\Views",
-    "\\denemeProje\\Views\\Admin"
+    "\\BBBHukuk",
+    "\\BBBHukuk\\Views",
+    "\\BBBHukuk\\Views\\Admin"
   ],
-  "SelectedNode": "\\denemeProje\\Views\\Admin\\Index.cshtml",
+  "SelectedNode": "\\BBBHukuk\\Views\\Admin\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
